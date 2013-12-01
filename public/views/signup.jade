@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    div.section-colored
+        div.container
+            div.row
+                div.col-lg-6
+                    div.panel.panel-info
+                        div.panel-heading
+                            h3.panel-title Signup as a customer
+                        div.panel-body
+                            if (errormessage !== undefined)
+                                div.alert.alert-danger
+                                    p= errormessage
+
+                            form(method='post')
+                                div.form-group
+                                    label(for="email") Email address
+                                    input.form-control(type='email', id="email", name='email', placeholder='Enter email', value=email)
+                                div.form-group
+                                    label(for="phone") Phone number
+                                    input.form-control(type='phone', id="phone", name='phone', placeholder='Enter phone number', value=phone)
+                                div.form-group
+                                    label(for="password") Password
+                                    input.form-control(type='password', id="password", name='password', placeholder='password')
+                                div.form-group
+                                    input.btn.btn-primary(type='submit', value='Sign up')

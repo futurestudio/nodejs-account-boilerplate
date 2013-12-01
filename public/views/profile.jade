@@ -1,0 +1,48 @@
+extends layout
+
+block content
+    div.section-colored
+        div.container
+            div.row
+                div.col-lg-6
+                    div.panel.panel-info
+                        div.panel-heading
+                            h3.panel-title Account Profile
+
+                        div.panel-body
+                            if (successmessage !== undefined)
+                                div.alert.alert-success
+                                    p= successmessage
+
+                            if (errormessage !== undefined)
+                                div.alert.alert-danger
+                                    p= errormessage
+
+                            form(method='post', id='changeProfile', name='changeProfile')
+                                input(type='hidden', id="email", name='email', placeholder='Enter email', value=user.email)
+                                div.form-group
+                                    label(for="visEmail") Email address
+                                    input.form-control(type='email', id="visEmail", name='visEmail', placeholder='Enter email', value=user.email, disabled)
+                                div.form-group
+                                    label(for="phone") Phone number
+                                    input.form-control(type='phone', id="phone", name='phone', placeholder='Enter phone number', value=user.phone)
+                                div.form-group
+                                    label(for="password") Password
+                                    input.form-control(type='password', id="password", name='password', placeholder='enter only if you want to change the passwort')
+                                div.form-group
+                                    input.btn.btn-primary(type='submit', value='Save Changes')
+
+
+
+                div.col-lg-6
+                    div.panel.panel-danger
+                        div.panel-heading
+                            h3.panel-title Dangerous area - be careful!
+
+                        div.panel-body
+                            p There is no further confirmation. A click on the button deletes your account immediately. It cannot be recovered!
+                            form(method='post', id='deleteProfile', name='deleteProfile')
+                                div.form-group
+                                    input(type='hidden', id="email", name='email', placeholder='Enter email', value=user.email)
+                                    input(type='hidden', id="deleteAccount", name='deleteAccount', value='true')
+                                    input.btn.btn-danger(type='submit', value='Delete Account')
