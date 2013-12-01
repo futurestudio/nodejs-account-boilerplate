@@ -15,9 +15,10 @@ It has the following features:
 The skeleton does not only provide you with a website and the necessary server functions, it also has a REST API to handle the account related things. Adding new endpoints is fast and easy. Perfect for new projects with mobile apps (or any platform which is able to send HTTP requests and de/serialize JSON).
 
 - Requests are authenticated with a token (not username/password)
+- The requests from the REST API and the website run against the same business logic, just the handling is different (see account methods as an example for new endpoints)
 
 ## Stack
-You need the following core technologies to run **nodejs-account-skeleton**.
+You need the following core technologies to run **nodejs-account-skeleton**:
 - NodeJS
 - MongoDB
 
