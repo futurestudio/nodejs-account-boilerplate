@@ -18,12 +18,8 @@ nav.navbar.navbar-inverse.navbar-fixed-top(role="navigation")
                 if (session === undefined || session.passport.user === undefined)
                     li
                         a(href="/login") Login
-                    li.dropdown
-                        a.dropdown-toggle(href="#", data-toggle="dropdown") Signup
-                            b.caret
-                        ul.dropdown-menu
-                            li
-                                a(href="/signup") As Customer
+                    li
+                        a(href="/signup") Signup
                 else
                     li.dropdown
                         a.dropdown-toggle(href="/account", data-toggle="dropdown") My Account

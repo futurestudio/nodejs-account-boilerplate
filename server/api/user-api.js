@@ -5,7 +5,7 @@
 var UserSchema = require('../schemas/users');
 var EmailDispatcher = require('../modules/email-dispatcher');
 var helper = require('../modules/helper');
-var check = require('validator').check;
+var validator = require('validator');
 var passport = require('../../server/modules/auth');
 
 // todo change to function(err, result) pattern

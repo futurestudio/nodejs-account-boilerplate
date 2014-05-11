@@ -120,8 +120,8 @@ module.exports = function (env) {
     app.post('/login', websiteUserSession, user.postlogin);
 
     // reset password
-    app.get('/reset-password', websiteUserSession, user.resetpassword);
-    app.post('/reset-password', websiteUserSession, user.resetpasswordpost);
+    app.get('/reset-password', websiteUserSession, user.resetPassword);
+    app.post('/reset-password', websiteUserSession, user.resetPasswordPost);
 
     // user account
     app.get('/account', websiteUserSession, user.account);
