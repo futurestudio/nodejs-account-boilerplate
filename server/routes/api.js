@@ -1,39 +1,49 @@
 var UserAPI = require('../api/user-api');
 
+/*
+ USER FUNCTIONS WITHOUT API AUTHENTICATION
+ */
+
 exports.signUpUser = function(req, res){
-    UserAPI.signupUser(req, function(result) {
-        if (result.successful)
+    UserAPI.signupUser(req, function(err, user) {
+        if (err)
         {
-            // attempt to log the user in right away
-            res.status(200).send('Registration successful');
+            res.send(400, err);
         }
         else {
-            res.status(400).send(result.error);
+            res.json(201, user);
         }
     });
 };
 
+
 exports.loginUser = function(req, res){
-    UserAPI.loginUser(req, function(result) {
-        if (result.successful)
+    UserAPI.loginUser(req, function(err, user) {
+        if (err)
         {
-            res.json(result.user);
+            res.send(400, err);
         }
         else {
-            res.status(400).send(result.error);
+            res.json(user);
         }
     });
 };
 
 exports.deleteAccount = function(req, res){
-    UserAPI.deleteAccount(req, function(result) {
-        if (result.successful)
+    UserAPI.deleteAccount(req, function(err, result) {
+        if (err)
         {
-            // attempt to log the user in right away
-            res.status(200).send('Account deleted');
+            res.json(400, err);
         }
         else {
-            res.status(400).json(result.user);
+            res.send(204, 'Account deleted');
         }
     });
+};
+
+/*
+ USER FUNCTIONS WITH API AUTHENTICATION CHECK
+ */
+exports.getUserInfo = function(req, res){
+    res.json(req.user);
 };

@@ -14,8 +14,8 @@
         "passport": "~0.2.0",
         "passport-local": "~1.0.0",
         "bcrypt": "~0.7.7",
-        "emailjs": "0.3.6",
-        "validator": "3.5.4",
+        "emailjs": "~0.3.6",
+        "validator": "~3.5.0",
         "i18n": "~0.4.1"
     },
     "devDependencies": {
@@ -23,7 +23,7 @@
         "should": "~3.2.0",
         "supertest": "~0.10.0",
         "istanbul": "~0.2.6",
-        "jshint": "2.4.4"
+        "jshint": "~2.4.4"
     },
     "engines": {
         "node": "0.10.21",

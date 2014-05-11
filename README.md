@@ -75,6 +75,16 @@ If everything is set up correctly, visit
 localhost:3000
 ```
 
+### Tests
+
+The provided functions are thoroughly tested. Run
+
+```
+mocha test
+```
+
+for our provided tests.
+
 ### REST API
 
 A request to the REST API to signup a new user could look like this (use a tool like [postman](http://getpostman.com/) to quickly test the API):
@@ -97,5 +107,5 @@ A full API documentation will be added soon.
 
 We very warmly welcome any contributions. If it's bugs, feature requests or implementation, we enjoy feedback :)
 
-I sincerely thank @marcuspoehls for his outstanding help & valuable input.
+I sincerely thank [@marcuspoehls](https://github.com/marcuspoehls) for his outstanding help & valuable input.
 

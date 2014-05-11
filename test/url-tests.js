@@ -24,21 +24,6 @@ describe('Server - HTTP tests without data', function() {
             });
     });
 
-    describe('GET /merchants', function() {
-        it('should return a 200 status code',
-            function (done) {
-
-                supertest(app)
-                    .get('/merchants')
-                    .expect(200)
-                    .end(function (err, res) {
-                        res.status.should.equal(200);
-                        done();
-                    });
-
-            });
-    });
-
     describe('GET /signup', function() {
         it('should return a 200 status code',
             function (done) {
