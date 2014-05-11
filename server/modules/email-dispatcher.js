@@ -17,7 +17,7 @@ EM.dispatchWelcomeEmail = function(account, callback)
         EM.server.send({
             from : ES.sender,
             to : account.email,
-            subject : 'Welcome to Delivery SDP',
+            subject : 'Welcome to nodejs-account-boilerplate',
             text : 'something went wrong... :(',
             attachment : EM.composeWelcomeEmail(account)
         }, callback );
@@ -43,21 +43,22 @@ EM.composeWelcomeEmail = function(o)
 {
     var html = "<html><body>";
     html += "Hi,<br><br>";
-    html += "Welcome to Delivery SDP!<br><br>";
+    html += "Welcome to nodejs-account-boilerplate!<br><br>";
     html += "Cheers,<br>";
-    html += "Your delivery SDP team<br><br>";
+    html += "Your nodejs-account-boilerplate team<br><br>";
     html += "</body></html>";
     return [{data:html, alternative:true}];
 }
 
 EM.composeResetPasswordEmail = function(o)
 {
-    var link = 'http://delivery-sdp.herokuapp.com/reset-password?email='+o.email+'&token='+o.password_reset_token;
+    // todo set your deployment url
+    var link = 'http://<yoururl.com>/reset-password?email='+o.email+'&token='+o.password_reset_token;
     var html = "<html><body>";
     html += "Hi,<br><br>";
     html += "<a href='"+link+"'>Please click here to reset your password</a><br><br>";
     html += "Cheers,<br>";
-    html += "Your delivery SDP team<br><br>";
+    html += "Your nodejs-account-boilerplate team<br><br>";
     html += "</body></html>";
     return [{data:html, alternative:true}];
 }
