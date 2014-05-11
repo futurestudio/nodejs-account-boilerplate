@@ -18,6 +18,8 @@ module.exports = function (env) {
         mongoose.connect("mongodb://<username>:<password>@<server>.mongolab.com:<server>/<database>");
     }
     else {
+        // todo IMPORTANT double check, that this database is different from the above
+        // this database is used by the tests, which completely drop (delete all content of) the database
         mongoose.connect("mongodb://<username>:<password>@<server>.mongolab.com:<server>/<database>");
     }
 
