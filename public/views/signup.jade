@@ -7,7 +7,7 @@ block content
                 div.col-lg-6
                     div.panel.panel-info
                         div.panel-heading
-                            h3.panel-title Signup as a customer
+                            h3.panel-title #{__('Signup as a user')}
                         div.panel-body
                             if (errormessage !== undefined)
                                 div.alert.alert-danger
@@ -15,13 +15,13 @@ block content
 
                             form(method='post')
                                 div.form-group
-                                    label(for="email") Email address
+                                    label(for="email") #{__('Email address')}
                                     input.form-control(type='email', id="email", name='email', placeholder='Enter email', value=email)
                                 div.form-group
-                                    label(for="phone") Phone number
+                                    label(for="phone") #{__('Phone number')}
                                     input.form-control(type='phone', id="phone", name='phone', placeholder='Enter phone number', value=phone)
                                 div.form-group
-                                    label(for="password") Password
+                                    label(for="password") #{__('Password')}
                                     input.form-control(type='password', id="password", name='password', placeholder='password')
                                 div.form-group
                                     input.btn.btn-primary(type='submit', value='Sign up')

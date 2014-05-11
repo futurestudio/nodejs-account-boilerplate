@@ -1,0 +1,23 @@
+{
+    "nodejs-account-boilerplate": "nodejs-account-boilerplate",
+    "Toggle Navigation": "Menu ausklappen",
+    "Home": "Home",
+    "Login": "Login",
+    "Signup": "Anmeldung",
+    "Email address": "E-<ail Addresse",
+    "Password": "Passwort",
+    "Forgot Password?": "Passwort vergessen?",
+    "Signup as a user": "Anmeldung als Nutzer",
+    "Phone number": "Telefon-Nummer",
+    "My Account": "Mein Konto",
+    "Profile": "Profil",
+    "Logout": "Logout",
+    "Account Profile": "Konto Profil",
+    "Dangerous area - be careful!": "Gefährlich! Bitte erst nachdenken, dann klicken!",
+    "There is no further confirmation. A click on the button deletes your account immediately. It cannot be recovered!": "Es gibt keine Bestätigung, eine Klick löscht ihr Konto unwiederruflich",
+    "Account deleted :(": "Konto gelöscht :(",
+    "Goodbye. Please let us know if there is something we can do better.": "Auf Wiedersehen. Wir freuen uns über konstruktive Kritik",
+    "Set new password": "Neues Password setzen",
+    "Token": "Token",
+    "New Password": "Neues Passwort"
+}

@@ -23,6 +23,15 @@ module.exports = function (env) {
     var path = require('path');
     var app = express();
 
+    // internationalization
+    var i18n = require('i18n');
+    i18n.configure({
+        locales: ['en', 'de'],
+        defaultLocale: 'en',
+        cookie: 'nodejs_account_boilerplate_lang',
+        directory: __dirname + '/locales'
+    });
+
     // get database instance
     // depending on the environment, use a different database
     var db = require('./settings/db')(app.get('env'));
@@ -50,6 +59,7 @@ module.exports = function (env) {
         res.set('X-Powered-By', 'nodejs-account-boilerplate');
         next();
     });
+    app.use(i18n.init);
     app.use(app.router);
     app.use(express.static(path.join(__dirname, '../public/static')));
 
