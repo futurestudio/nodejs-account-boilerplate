@@ -1,7 +1,18 @@
 {
     "name": "nodejs-account-boilerplate",
-    "version": "0.0.2",
-    "private": true,
+    "version": "0.0.3",
+    "author": "Norman Peitek <norman@futurestud.io>",
+    "contributors": [
+        {
+            "name": "Marcus Pöhls",
+            "email": "marcus@futurestud.io"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/peitek/nodejs-account-boilerplate.git",
+        "web": "http://github.com/peitek/nodejs-account-boilerplate"
+    },
     "scripts": {
         "start": "node server.js",
         "test": "mocha test -R spec"

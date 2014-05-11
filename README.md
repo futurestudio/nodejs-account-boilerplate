@@ -19,7 +19,7 @@ It has the following features:
 
 - Full test coverage
 
-- Internationalization (soon)
+- Internationalization
 
 ## API
 The boilerplate does not only provide you with a website and the necessary server functions, it also has a REST API to handle the account related things. Adding new endpoints is fast and easy. Perfect for new projects with mobile apps (or any platform which is able to send HTTP requests and de/serialize JSON).
