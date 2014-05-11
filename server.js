@@ -3,8 +3,7 @@
  */
 
 var http = require('http'),
-    db = require('./server/settings/db'),
-    app = require('./server/app')(db);
+    app = require('./server/app')();
 
 http.createServer(app).listen(app.get('port'), function(){
     console.log('Express server listening on port ' + app.get('port'));

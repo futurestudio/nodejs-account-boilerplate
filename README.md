@@ -14,7 +14,12 @@ It has the following features:
   - Session tracking for website
   - Blowfish-based password encryption (every password is hashed with an individual salt)
 
-- 
+- Environment-based database access
+  - set a different DB for development than production (or any stage you want)
+
+- Full test coverage
+
+- Internationalization
 
 ## API
 The boilerplate does not only provide you with a website and the necessary server functions, it also has a REST API to handle the account related things. Adding new endpoints is fast and easy. Perfect for new projects with mobile apps (or any platform which is able to send HTTP requests and de/serialize JSON).
@@ -37,6 +42,7 @@ Besides the core technologies it uses (this list may be incomplete):
 * [Bcrypt](https://npmjs.org/package/bcrypt-nodejs) - For password encryption
 * [FontAwesome](http://fortawesome.github.io/Font-Awesome/) - The iconic font designed for Bootstrap
 * [Twitter Bootstrap](http://twitter.github.com/bootstrap/) - UI Component & Layout Library
+* [Mocha](https://npmjs.org/package/mocha) - node.js Testing framework
 
 The website is based on the [Modern Business template](http://startbootstrap.com/templates/modern-business/).
 
@@ -83,9 +89,9 @@ Content-Type: application/json
   "phone":"0123456789",
   "password":"password"
 }
+```
 
 A full API documentation will be added soon.
-
 
 ## Contributions
 
@@ -93,4 +99,3 @@ We very warmly welcome any contributions. If it's bugs, feature requests or impl
 
 I sincerely thank @marcuspoehls for his outstanding help & valuable input.
 
-```

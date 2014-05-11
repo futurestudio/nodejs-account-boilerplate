@@ -3,9 +3,13 @@
  * Module dependencies.
  */
 
-module.exports = function (db) {
+module.exports = function (env) {
+
+    if (env !== undefined) {
+        process.env.NODE_ENV = env;
+    }
+
     var express = require('express');
-    var MongoStore = require('connect-mongo')(express);
     var passport = require('./modules/auth');
 
     // api
@@ -18,6 +22,11 @@ module.exports = function (db) {
 
     var path = require('path');
     var app = express();
+
+    // get database instance
+    // depending on the environment, use a different database
+    var db = require('./settings/db')(app.get('env'));
+    var MongoStore = require('connect-mongo')(express);
 
     // all environments
     app.set('port', process.env.PORT || 3000);
@@ -38,7 +47,7 @@ module.exports = function (db) {
     app.use(express.urlencoded());
     app.use(express.methodOverride());
     app.use(function (req, res, next) {
-        res.set('X-Powered-By', 'nodejs-account-skeleton');
+        res.set('X-Powered-By', 'nodejs-account-boilerplate');
         next();
     });
     app.use(app.router);
