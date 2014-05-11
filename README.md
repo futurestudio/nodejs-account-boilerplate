@@ -19,7 +19,7 @@ It has the following features:
 
 - Full test coverage
 
-- Internationalization
+- Internationalization (soon)
 
 ## API
 The boilerplate does not only provide you with a website and the necessary server functions, it also has a REST API to handle the account related things. Adding new endpoints is fast and easy. Perfect for new projects with mobile apps (or any platform which is able to send HTTP requests and de/serialize JSON).
@@ -34,7 +34,7 @@ You need the following core technologies to run **nodejs-account-boilerplate**:
 - NodeJS
 - MongoDB
 
-Besides the core technologies it uses (this list may be incomplete):
+Besides the core technologies it uses major components (this list is very likely incomplete):
 
 * [Express.js](http://expressjs.com/) - Node.js Web Framework
 * [Jade](http://jade-lang.com/) - HTML Templating Engine
@@ -101,7 +101,7 @@ Content-Type: application/json
 }
 ```
 
-A full API documentation will be added soon.
+A full API documentation is available on Github at [/docs/api-docs](https://github.com/peitek/nodejs-account-boilerplate/tree/develop/docs/api-doc)
 
 ## Contributions
 
