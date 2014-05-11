@@ -5,31 +5,27 @@ nav.navbar.navbar-inverse.navbar-fixed-top(role="navigation")
     div.container
         div.navbar-header
             a.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse")
-                span.sr-only Toggle Navigation
+                span.sr-only #{__('Toggle Navigation')}
                 span.icon-bar
                 span.icon-bar
                 span.icon-bar
-            a.navbar-brand(href="/") nodejs-account-boilerplate
+            a.navbar-brand(href="/") #{__('nodejs-account-boilerplate')}
 
         div.collapse.navbar-collapse.navbar-ex1-collapse
             ul.nav.navbar-nav.navbar-right
                 li
-                    a(href="/") Home
+                    a(href="/") #{__('Home')}
                 if (session === undefined || session.passport.user === undefined)
                     li
-                        a(href="/login") Login
+                        a(href="/login") #{__('Login')}
                     li
-                        a(href="/signup") Signup
+                        a(href="/signup") #{__('Signup')}
                 else
                     li.dropdown
-                        a.dropdown-toggle(href="/account", data-toggle="dropdown") My Account
+                        a.dropdown-toggle(href="/account", data-toggle="dropdown") #{__('My Account')}
                             b.caret
                         ul.dropdown-menu
                             li
-                                a(href="/account") Favorites
+                                a(href="/profile") #{__('Profile')}
                             li
-                                a(href="/account") History
-                            li
-                                a(href="/profile") Profile
-                            li
-                                a(href="/logout") Logout
+                                a(href="/logout") #{__('Logout')}

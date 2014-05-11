@@ -1,0 +1,23 @@
+{
+	"nodejs-account-boilerplate": "nodejs-account-boilerplate",
+	"Toggle Navigation": "Toggle Navigation",
+	"Home": "Home",
+	"Login": "Login",
+	"Signup": "Signup",
+	"Email address": "Email address",
+	"Password": "Password",
+	"Forgot Password?": "Forgot Password?",
+	"Signup as a user": "Signup as a user",
+	"Phone number": "Phone number",
+	"My Account": "My Account",
+	"Profile": "Profile",
+	"Logout": "Logout",
+	"Account Profile": "Account Profile",
+	"Dangerous area - be careful!": "Dangerous area - be careful!",
+	"There is no further confirmation. A click on the button deletes your account immediately. It cannot be recovered!": "There is no further confirmation. A click on the button deletes your account immediately. It cannot be recovered!",
+	"Account deleted :(": "Account deleted :(",
+	"Goodbye. Please let us know if there is something we can do better.": "Goodbye. Please let us know if there is something we can do better.",
+	"Set new password": "Set new password",
+	"Token": "Token",
+	"New Password": "New Password"
+}

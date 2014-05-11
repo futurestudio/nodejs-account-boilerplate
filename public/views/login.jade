@@ -7,7 +7,7 @@ block content
                 div.col-lg-6
                     div.panel.panel-info
                         div.panel-heading
-                            h3.panel-title Login
+                            h3.panel-title #{__('Login')}
                         div.panel-body
                             if (errormessage !== undefined)
                                 div.alert.alert-danger
@@ -15,10 +15,10 @@ block content
 
                             form(method='post')
                                 div.form-group
-                                    label(for="email") Email address
+                                    label(for="email") #{__('Email address')}
                                     input.form-control.span4.required(type='email', id="email", name='email', placeholder='Enter email', value=email)
                                 div.form-group
-                                    label(for="password") Password
+                                    label(for="password") #{__('Password')}
                                     input.form-control(type='password', id="password", name='password', placeholder='password')
                                 div.form-group
                                     input.btn.btn-primary(type='submit', value='Login')
@@ -26,7 +26,7 @@ block content
                 div.col-lg-6
                     div.panel.panel-warning
                         div.panel-heading
-                            h3.panel-title Forgot Password?
+                            h3.panel-title #{__('Forgot Password?')}
                         div.panel-body
                             if (sendpwerrormessage !== undefined)
                                 div.alert.alert-danger
@@ -39,7 +39,7 @@ block content
                             form(method='post')
                                 input(type='hidden', id="forgotPassword", name='forgotPassword', value='true')
                                 div.form-group
-                                    label(for="loginEmail") Email address
+                                    label(for="loginEmail") #{__('Email address')}
                                     input.form-control.span4.required(type='email', id="email", name='email', placeholder='Enter email', value=email)
                                 div.form-group
                                     input.btn.btn-warning(type='submit', value='Send new password')

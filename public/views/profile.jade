@@ -7,7 +7,7 @@ block content
                 div.col-lg-6
                     div.panel.panel-info
                         div.panel-heading
-                            h3.panel-title Account Profile
+                            h3.panel-title #{__('Account Profile')}
 
                         div.panel-body
                             if (successmessage !== undefined)
@@ -21,13 +21,13 @@ block content
                             form(method='post', id='changeProfile', name='changeProfile')
                                 input(type='hidden', id="email", name='email', placeholder='Enter email', value=user.email)
                                 div.form-group
-                                    label(for="visEmail") Email address
+                                    label(for="visEmail") #{__('Email address')}
                                     input.form-control(type='email', id="visEmail", name='visEmail', placeholder='Enter email', value=user.email, disabled)
                                 div.form-group
-                                    label(for="phone") Phone number
+                                    label(for="phone") #{__('Phone number')}
                                     input.form-control(type='phone', id="phone", name='phone', placeholder='Enter phone number', value=user.phone)
                                 div.form-group
-                                    label(for="password") Password
+                                    label(for="password") #{__('Password')}
                                     input.form-control(type='password', id="password", name='password', placeholder='enter only if you want to change the passwort')
                                 div.form-group
                                     input.btn.btn-primary(type='submit', value='Save Changes')
@@ -37,10 +37,10 @@ block content
                 div.col-lg-6
                     div.panel.panel-danger
                         div.panel-heading
-                            h3.panel-title Dangerous area - be careful!
+                            h3.panel-title #{__('Dangerous area - be careful!')}
 
                         div.panel-body
-                            p There is no further confirmation. A click on the button deletes your account immediately. It cannot be recovered!
+                            p #{__('There is no further confirmation. A click on the button deletes your account immediately. It cannot be recovered!')}
                             form(method='post', id='deleteProfile', name='deleteProfile')
                                 div.form-group
                                     input(type='hidden', id="email", name='email', placeholder='Enter email', value=user.email)
