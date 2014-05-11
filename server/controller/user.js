@@ -1,4 +1,4 @@
-var UserAPI = require('../../server/api/user-api');
+var UserAPI = require('../api/user-api');
 
 exports.signup = function(req, res){
     res.render('signup', { title: 'Signup as a customer' });

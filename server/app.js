@@ -17,8 +17,8 @@ module.exports = function (env) {
     var UserAPI = require('./api/user-api');
 
     // website controller
-    var routes = require('./../public/controller/');
-    var user = require('./../public/controller/user');
+    var routes = require('./controller/');
+    var user = require('./controller/user');
 
     var path = require('path');
     var app = express();
