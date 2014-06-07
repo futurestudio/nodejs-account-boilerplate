@@ -54,7 +54,7 @@ The website is based on the [Modern Business template](http://startbootstrap.com
 You have install NodeJS dependencies before usage
 
 ```
-git clone git@github.com:peitek/nodejs-account-boilerplate.git
+git clone git@github.com:fs-opensource/nodejs-account-boilerplate.git
 cd nodejs-account-boilerplate
 npm install
 ```
@@ -105,20 +105,18 @@ Content-Type: application/json
 }
 ```
 
-A full API documentation is available on Github at [/docs/api-docs](https://github.com/peitek/nodejs-account-boilerplate/tree/develop/docs/api-doc)
+A full API documentation is available on Github at [/docs/api-docs](https://github.com/fs-opensource/nodejs-account-boilerplate/tree/develop/docs/api-doc)
 
 ## Contributions
 
 We very warmly welcome any contributions. If it's bugs, feature requests or implementation, we enjoy feedback :)
-
-I sincerely thank [@marcuspoehls](https://github.com/marcuspoehls) for his outstanding help & valuable input.
 
 ## License
 
 ```
 The MIT License (MIT)
 
-Copyright (c) 2014 Norman Peitek
+Copyright (c) 2014 Future Studio (futurestud.io)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of 
 this software and associated documentation files (the "Software"), to deal in

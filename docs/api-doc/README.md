@@ -17,7 +17,7 @@ Currently supported authentication methods:
 
 The API uses regular <code>GET</code>, <code>POST</code>, <code>PUT</code> and <code>DELETE</code> commands. Examples are available in the tests.
 
-[Making requests and error codes](https://github.com/peitek/nodejs-account-boilerplate/blob/develop/docs/api-doc/basics/requests_and_errors.md)
+[Making requests and error codes](https://github.com/fs-opensource/nodejs-account-boilerplate/blob/develop/docs/api-doc/basics/requests_and_errors.md)
 
 ## Endpoints
 
@@ -25,14 +25,14 @@ The following list shows all API endpoints, linked to further information.
 
 ### Users - General Purposes
 
-- [**<code>GET</code>  /api/user/info**](https://github.com/peitek/nodejs-account-boilerplate/blob/develop/docs/api-doc/endpoints/user/GET_user_info.md)
-- [**<code>POST</code>  /api/user/login**](https://github.com/peitek/nodejs-account-boilerplate/blob/develop/docs/api-doc/endpoints/user/POST_user_login.md)
-- [**<code>POST</code>  /api/user/signup**](https://github.com/peitek/nodejs-account-boilerplate/blob/develop/docs/api-doc/endpoints/user/POST_user_signup.md)
-- [**<code>POST</code>  /api/user/delete**](https://github.com/peitek/nodejs-account-boilerplate/blob/develop/docs/api-doc/endpoints/user/POST_user_delete.md)
+- [**<code>GET</code>  /api/user/info**](https://github.com/fs-opensource/nodejs-account-boilerplate/blob/develop/docs/api-doc/endpoints/user/GET_user_info.md)
+- [**<code>POST</code>  /api/user/login**](https://github.com/fs-opensource/nodejs-account-boilerplate/blob/develop/docs/api-doc/endpoints/user/POST_user_login.md)
+- [**<code>POST</code>  /api/user/signup**](https://github.com/fs-opensource/nodejs-account-boilerplate/blob/develop/docs/api-doc/endpoints/user/POST_user_signup.md)
+- [**<code>POST</code>  /api/user/delete**](https://github.com/fs-opensource/nodejs-account-boilerplate/blob/develop/docs/api-doc/endpoints/user/POST_user_delete.md)
 
 ## Objects
 
-- [**User**](https://github.com/peitek/nodejs-account-boilerplate/blob/develop/docs/api-doc/objects/user.md)
+- [**User**](https://github.com/fs-opensource/nodejs-account-boilerplate/blob/develop/docs/api-doc/objects/user.md)
 
 ## Contribution
 
