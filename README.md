@@ -31,7 +31,7 @@ The boilerplate does not only provide you with a website and the necessary serve
 - Requests are authenticated with a token (not username/password)
 - The requests from the REST API and the website run against the same business logic, just the handling is different (see account methods as an example for new endpoints)
 
-We'll soon provide a boilerplate for a matching android app.
+A fully functional android app boilerplate which uses the provided APIs is [available here](https://github.com/fs-opensource/android-boilerplate).
 
 ## Stack
 You need the following core technologies to run **nodejs-account-boilerplate**:
