@@ -12,7 +12,7 @@ var favicon = require('serve-favicon');
 var session = require('express-session');
 var morgan = require('morgan');
 var methodOverride = require('method-override');
-var errorhandler = require('error-handler');
+var errorhandler = require('errorhandler');
 
 // accounts
 var passport = require('./modules/auth');
@@ -80,7 +80,7 @@ module.exports = function (env) {
 
     // development only
     if ('development' == app.get('env')) {
-      //app.use(errorhandler());
+      app.use(errorhandler());
     }
 
     // include this block to force HTTPS on heroku.com deployments
