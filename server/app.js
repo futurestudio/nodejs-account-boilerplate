@@ -49,13 +49,13 @@ module.exports = function (env) {
     app.set('port', process.env.PORT || 3000);
     app.set('views', path.join(__dirname, '../public/views'));
     app.set('view engine', 'jade');
-    app.use(favicon());
+//    app.use(favicon());
     app.use(logger('dev'));
     app.use(cookieParser());
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(multer());
-    app.use(express.session({
+    app.use(session({
         resave: true,
         saveUninitialized: true,
         secret: 'keyboard cat two', // that's a secret phrase to encrypt the session key
