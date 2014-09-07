@@ -107,6 +107,16 @@ Content-Type: application/json
 
 A full API documentation is available on Github at [/docs/api-docs](https://github.com/fs-opensource/nodejs-account-boilerplate/tree/develop/docs/api-doc)
 
+### nginx
+
+In case you're running the boilerplate on a nginx server, you might need to change the [Underscores in Headers](http://nginx.org/en/docs/http/ngx_http_core_module.html#underscores_in_headers) setting to on:
+
+```
+underscores_in_headers on
+```
+
+We are using underscores in some header parameters for the API. If you don't turn it on, the headers will be ignored and it won't work as expected.
+
 ## Contributions
 
 We very warmly welcome any contributions. If it's bugs, feature requests or implementation, we enjoy feedback :)
