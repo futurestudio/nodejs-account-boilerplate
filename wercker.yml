@@ -1,4 +1,4 @@
-box: wercker/nodejs
+box: jparyani/meteor@8.0.0
 # Build definition
 build:
   # The steps that will be executed on build
