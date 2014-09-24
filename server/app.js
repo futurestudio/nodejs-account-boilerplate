@@ -20,8 +20,16 @@ module.exports = function (env) {
     var routes = require('./controller/');
     var user = require('./controller/user');
 
-    var path = require('path');
-    var app = express();
+    var path = require('path'),
+        favicon = require('serve-favicon'),
+        logger = require('morgan'),
+        methodOverride = require('method-override'),
+        session = require('express-session'),
+        bodyParser = require('body-parser'),
+        cookieParser = require('body-parser'),
+        multer = require('multer'),
+        errorHandler = require('errorhandler'),
+        app = express();
 
     // internationalization
     var i18n = require('i18n');
@@ -35,16 +43,21 @@ module.exports = function (env) {
     // get database instance
     // depending on the environment, use a different database
     var db = require('./settings/db')(app.get('env'));
-    var MongoStore = require('connect-mongo')(express);
+    var MongoStore = require('connect-mongo')(session);
 
     // all environments
     app.set('port', process.env.PORT || 3000);
     app.set('views', path.join(__dirname, '../public/views'));
     app.set('view engine', 'jade');
-    app.use(express.favicon());
-    app.use(express.logger('dev'));
-    app.use(express.cookieParser());
-    app.use(express.session({
+//    app.use(favicon());
+    app.use(logger('dev'));
+    app.use(cookieParser());
+    app.use(bodyParser.json());
+    app.use(bodyParser.urlencoded({ extended: true }));
+    app.use(multer());
+    app.use(session({
+        resave: true,
+        saveUninitialized: true,
         secret: 'keyboard cat two', // that's a secret phrase to encrypt the session key
         store: new MongoStore({
             mongoose_connection: db
@@ -52,20 +65,17 @@ module.exports = function (env) {
     }));
     app.use(passport.initialize());
     app.use(passport.session());
-    app.use(express.json());
-    app.use(express.urlencoded());
-    app.use(express.methodOverride());
+    app.use(methodOverride());
     app.use(function (req, res, next) {
         res.set('X-Powered-By', 'nodejs-account-boilerplate');
         next();
     });
     app.use(i18n.init);
-    app.use(app.router);
     app.use(express.static(path.join(__dirname, '../public/static')));
 
     // development only
     if ('development' == app.get('env')) {
-      app.use(express.errorHandler());
+      app.use(errorHandler());
     }
 
     // include this block to force HTTPS on heroku.com deployments
