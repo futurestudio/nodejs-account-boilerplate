@@ -20,7 +20,7 @@ module.exports = function (env) {
     else {
         // todo IMPORTANT double check, that this database is different from the above
         // this database is used by the tests, which completely drop (delete all content of) the database
-        mongoose.connect("mongodb://<username>:<password>@<server>.mongolab.com:<server>/<database>");
+        mongoose.connect("mongodb://127.0.0.1:27017/fsos-node-boilerplate-test");
     }
 
     return mongoose.connection;
