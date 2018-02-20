@@ -1,7 +1,21 @@
-[![wercker status](https://app.wercker.com/status/e7c05973023d996d7ccdbe65c3c6307e/s/master "wercker status")](https://app.wercker.com/project/bykey/e7c05973023d996d7ccdbe65c3c6307e)
 
 # nodejs-account-boilerplate
 
+[![wercker status](https://app.wercker.com/status/e7c05973023d996d7ccdbe65c3c6307e/s/master "wercker status")](https://app.wercker.com/project/bykey/e7c05973023d996d7ccdbe65c3c6307e)
+
+
+## Futureflix
+`nodejs-account-boilerplate` is outdated and currently unmaintained. You can still benefit from the ideas within this code.
+
+We started **[learn hapi](http://learnhapi.com) as a learning path for the hapi web framework**. Become a hapi master while following the tutorial series. There you’ll build a complete app from start to finish.
+
+Check out the [Futureflix Starter Kit](https://github.com/fs-opensource/futureflix-starter-kit) for more details :tv:
+
+
+-----
+
+
+## Project Overview
 This is a boilerplate for new projects based on node.js and MongoDB. It reduces the initial effort so you can start with the fun things, and not implement an account system for the 24th time. It also comes with required basic functionality, like access to the appropriate database based on the node-environment or internationalization.
 
 This boilerplate is still under active development.
