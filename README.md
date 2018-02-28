@@ -9,9 +9,11 @@
 
 We started **[learn hapi](http://learnhapi.com) as a learning path for the hapi web framework**. Become a hapi master while following the tutorial series.
 
-<a href="http://learnhapi.com">	
-  <img src="https://futurestud.io/images/badges/hapi-hero-md.svg" height="30" />	
-</a>
+<p>
+  <a href="http://learnhapi.com">	
+    <img src="https://futurestud.io/images/badges/hapi-hero-md.svg" height="30" />	
+  </a>
+</p>
 
 You’ll build a complete app from start to finish. From zero to hero!
 
