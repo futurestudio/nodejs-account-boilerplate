@@ -7,7 +7,7 @@
 ## Futureflix
 `nodejs-account-boilerplate` is outdated and currently unmaintained. You can still benefit from the ideas within this code.
 
-We started **[learn hapi](http://learnhapi.com) as a learning path for the hapi web framework**. Become a hapi master while following the tutorial series.
+We started **[learn hapi](http://learnhapi.com) as a learning path for the hapi web framework**. Become a hapi hero by following the tutorial series.
 
 <p>
   <a href="http://learnhapi.com">	
