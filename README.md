@@ -1,7 +1,7 @@
 
 # nodejs-account-boilerplate
 
-[![wercker status](https://app.wercker.com/status/e7c05973023d996d7ccdbe65c3c6307e/s/master "wercker status")](https://app.wercker.com/project/bykey/e7c05973023d996d7ccdbe65c3c6307e)
+[![wercker status](https://app.wercker.com/status/e7c05973023d996d7ccdbe65c3c6307e/s/master "wercker status")](https://app.wercker.com/project/bykey/e7c05973023d996d7ccdbe65c3c6307e) [![Greenkeeper badge](https://badges.greenkeeper.io/futurestudio/nodejs-account-boilerplate.svg)](https://greenkeeper.io/)
 
 
 ## Futureflix
